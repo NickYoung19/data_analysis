@@ -31,7 +31,7 @@ plt.yticks(y_ticks[::5])
 # 增加标题、x轴y轴描述信息
 plt.xlabel("时间")
 plt.ylabel("温度")
-plt.title("中午11点0分到12点之间的温度变化图示")
+plt.title("中午11点0分到12点之间的温度变化图示", fontsize=24)
 
 # 绘制折线图
 plt.plot(x, y_zhengzhou, label="郑州")
@@ -41,8 +41,10 @@ plt.plot(x, y_xinyang, color='r', linestyle='--', label="信阳")
 # 添加图例
 plt.legend(loc="best")
 
-# 将绘制的图片保存为test.png
-plt.savefig("static/images/matplot_plot.png")
+# 指定保存图片边缘空白距离，并将绘制的图片保存到images目录
+plt.subplots_adjust(top=0.93, bottom=0.06, right=0.97, left=0.03, hspace=0, wspace=0)
+plt.margins(0,0)
+plt.savefig("static/images/matplot_plot.png", dpi=300)
 
 plt.show()
 
