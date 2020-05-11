@@ -8,7 +8,6 @@
 import matplotlib.pyplot as plt
 import random
 
-
 "Demo1: 画出温度变化图"
 # 创建一个figure >>> figsize:指定图的长宽, dpi:图像的清晰度, 返回fig对象
 plt.figure(figsize=(16, 8), dpi=80)
@@ -43,11 +42,10 @@ plt.legend(loc="best")
 
 # 指定保存图片边缘空白距离，并将绘制的图片保存到images目录
 plt.subplots_adjust(top=0.93, bottom=0.06, right=0.97, left=0.03, hspace=0, wspace=0)
-plt.margins(0,0)
-plt.savefig("static/images/matplot_plot.png", dpi=300)
+plt.margins(0, 0)
+plt.savefig("../static/images/matplot_plot.png", dpi=300)
 
 plt.show()
-
 
 """
 Demo2：画出温度变化图,展现在两个不同axes里面
