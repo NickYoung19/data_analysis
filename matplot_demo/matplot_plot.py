@@ -42,7 +42,7 @@ plt.plot(x, y_xinyang, color='r', linestyle='--', label="信阳")
 plt.legend(loc="best")
 
 # 将绘制的图片保存为test.png
-plt.savefig("matplot_plot.png")
+plt.savefig("static/images/matplot_plot.png")
 
 plt.show()
 
